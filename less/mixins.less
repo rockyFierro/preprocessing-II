@@ -5,3 +5,25 @@
   justify-content:@justify;
   align-items:@align;
 }
+
+.button(@paddingWidth: 2rem, @paddingHeight: 1rem){
+  padding:@paddingWidth @paddingHeight;
+  background-color:@button-bg;
+  color:@button-clr;
+  border:@button-clr 1px solid;
+  border-radius:1.3rem;
+}
+
+.mobileCol(){
+  @media @mobile {
+    .flex(column, center, center);
+  }
+}
+.smallCol(){
+  @media @small {
+    width: 100%;
+    img{
+      display: none;
+    }
+  }
+}
