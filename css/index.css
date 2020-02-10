@@ -210,9 +210,24 @@ nav ul li {
   margin: 0 1rem;
 }
 nav ul li a {
+  margin-top: 4px;
   color: gray;
   text-decoration: none;
   font-size: 2rem;
+}
+nav ul li a:hover {
+  animation: color 3s forwards;
+}
+@keyframes color {
+  0% {
+    color: #F94746;
+  }
+  10% {
+    color: #17A2B8;
+  }
+  100% {
+    color: #212529;
+  }
 }
 .footer {
   width: 100%;
@@ -242,6 +257,20 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+  overflow: hidden;
+}
+.home img:hover {
+  animation: glitch 4s forwards;
+}
+@keyframes glitch {
+  0% {
+    scale: 1 1;
+    box-shadow: 0 0.2px 1px;
+  }
+  100% {
+    scale: 1.5 1.5;
+    box-shadow: 0 1px 10px;
+  }
 }
 .home article {
   display: flex;
